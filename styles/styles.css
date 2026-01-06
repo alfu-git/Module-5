@@ -1,0 +1,155 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.6;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+}
+
+body{
+  max-width: 1600px;
+}
+
+/* shared style */
+a{
+  text-decoration: none;
+}
+
+ul, ol{
+  list-style-type: none;
+}
+
+/* MAIN STYLE-- */
+
+/* header style */
+header{
+  background: url(../images/developer.png), url(../images/header_bg.png), #FFF8F3; 
+  background-repeat: no-repeat;
+  background-position: 25px 38px, bottom right;
+  back
+}
+header nav{
+  width: 71%;
+  margin: 0 auto;
+  padding: 50px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+header ul{
+  display: flex;
+  gap: 51px;
+}
+
+header nav h2{
+  font-size: 45px;
+  font-weight: 800;
+}
+
+header nav h2 span{
+  color: #FD6E0A;
+}
+
+header nav ul li a{
+  color: #474747;
+  font-size: 20px;
+}
+
+header nav ul{
+  align-items: center;
+}
+
+header nav ul li button{
+  background-color: #FD6E0A;
+  width: 150px;
+  height: 65px;
+  border: none;
+  border-radius: 5px;
+}
+
+header nav ul li button:hover{
+  background-color: green;
+}
+
+header nav ul li button a{
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+header section.content{
+  margin: 0 82px 11px 186px;
+  display: flex;
+  align-items: center;
+}
+
+header section.content h2{
+  margin-bottom: 5px;
+  color: #474747;
+  font-size: 45px;
+  font-weight: 600;
+}
+
+header section.content h1{
+  margin-bottom: 20px;
+  color: #181818;
+  font-weight: 700;
+  font-size: 85px;
+}
+
+header section.content p{
+  margin-bottom: 30px;
+  color: #757575;
+  font-size: 18px;
+}
+
+header section.content .dwn-btn{
+  margin-right: 30px;
+  padding: 19px 17px;
+  background-color: #FD6E0A;
+  border: none;
+  border-radius: 3px;
+}
+
+header section.content .dwn-btn:hover{
+  background-color: green;
+}
+
+header section.content .dwn-btn i{
+  margin-right: 5px;
+}
+
+header section.content .dwn-btn a{
+  color: white;
+  font-size: 20px;
+}
+
+header section.content .cntc-btn{
+  padding: 19px 24px;
+  background-color: #FFF8F3;
+  border: 1px solid #FD6E0A;
+  border-radius: 3px;
+}
+
+header section.content .cntc-btn:hover{
+  border: 1px solid green;
+}
+
+header section.content .cntc-btn i{
+  margin-right: 5px;
+}
+
+header section.content .cntc-btn a{
+  color: #FD6E0A;
+  font-size: 20px;
+}
+
+header section.content .cntc-btn:hover i, header section.content .cntc-btn:hover a{
+  color: green;
+}
+
+section.content div.img-area img{
+  width: 584px;
+  height: 674px;
+}
