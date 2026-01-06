@@ -68,6 +68,10 @@ header nav ul li a{
   font-size: 20px;
 }
 
+header nav ul li a:hover{
+  color: #FD6E0A;
+}
+
 header nav ul{
   align-items: center;
 }
@@ -163,6 +167,7 @@ header section.content .cntc-btn:hover i, header section.content .cntc-btn:hover
 }
 
 section.content div.img-area img{
+  height: 676px;
   max-width: 584px;
   vertical-align: middle;
 }
@@ -369,4 +374,94 @@ section.resume .dwn-btn a{
 
 section.resume .dwn-btn i{
   margin-right: 5px;
+}
+
+section.resume .dwn-btn:hover{
+  background-color: green;
+}
+
+/* footer area */
+section.footer{
+  margin-top: 113px;
+  background-color: #FFF8F3;
+}
+
+section.footer .footer-content{
+  padding: 130px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-content .div-1 h2{
+  color: #181818;
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.footer-content .div-1 p{
+  padding: 20px 200px 30px 0;
+  color: #474747;
+  font-size: 16px;
+}
+
+.footer-content .div-1 .parent-icon{
+  display: flex;
+  gap: 24px;
+}
+
+.footer-content .div-1 .parent-icon div a{
+  color: #FD6E0A;
+  font-size: 1.75em;
+} 
+
+.footer-content .div-1 .parent-icon div i:hover{
+  color: green;
+}
+
+.footer-content .div-2 h2{
+  margin-bottom: 20px;
+  color: #181818;
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.footer-content .div-2 form input{
+  margin-bottom: 24px;
+  width: 461px;
+  height:  64px;
+  display: block;
+  border: none;
+  border-radius: 5px;
+}
+
+.footer-content .div-2 form input::placeholder{
+  padding: 18px 350px 18px 30px;
+  color: #757575;
+  font-size: 16px;
+}
+
+.footer-content .div-2 form textarea{
+  margin-bottom: 24px;
+  border: none;
+  border-radius: 5px;
+}
+
+.footer-content .div-2 form textarea::placeholder{
+  padding: 18px 350px 18px 30px;
+  color: #757575;
+  font-size: 16px;
+}
+
+.footer-content .div-2 form .sb-btn{
+  background-color: #FD6E0A;
+  width: 150px;
+  height: 64px;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.footer-content .div-2 form .sb-btn:hover{
+  background-color: green;
+  cursor: pointer;
 }
