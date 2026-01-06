@@ -20,6 +20,12 @@ ul, ol{
   list-style-type: none;
 }
 
+.container{
+  width: 71%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
 /* MAIN STYLE-- */
 
 /* header style */
@@ -200,4 +206,64 @@ div.about-container{
   color: #474747;
   font-size: 20px;
   font-weight: 700;
+}
+
+/* skill area */
+section.skill{
+  margin-top: 115px;
+  margin-bottom: 130px;
+}
+
+section.skill .text-area{
+  text-align: center;
+}
+
+section.skill .text-area h2{
+  margin-bottom: 30px;
+  color: #181818;
+  font-size: 35px;
+  font-weight: 700;
+}
+
+section.skill .text-area p{
+  margin: 0 157px 50px 157px;
+  color: #757575;
+  font-size: 18px;
+}
+
+section.skill .card-area{
+  display: flex;
+  gap: 24px;
+}
+
+section.skill .card-area div{
+  background-color: #ffffff;
+  border-radius: 5px ;
+  box-shadow: 0 6px 30px gray;
+}
+
+section.skill .card-area div:hover{
+  border: 2px solid #FD6E0A;
+  transition: 1s ease;
+  transform: scale(1.1);
+}
+
+section.skill .card-area div figure img{
+  padding: 30px 193px 30px 30px;
+}
+
+section.skill .card-area div h3, p{
+  padding: 0px 33px 30px 30px;
+}
+
+section.skill .card-area div h3{
+  color: #181818;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+section.skill .card-area div p{
+  color: #757575;
+  font-size: 16px;
+  text-align: left;
 }
