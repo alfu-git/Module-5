@@ -7,10 +7,6 @@
   font-optical-sizing: auto;
 }
 
-body{
-  max-width: 1600px;
-}
-
 /* shared style */
 a{
   text-decoration: none;
@@ -21,9 +17,9 @@ ul, ol{
 }
 
 .container{
-  width: 71%;
-  max-width: 1600px;
+  max-width: 1200px;
   margin: 0 auto;
+  padding: 0 40px;
 }
 
 .dwn-btn{
@@ -38,11 +34,12 @@ ul, ol{
 /* header style */
 header{
   background: url(../images/developer.png), url(../images/header_bg.png), #FFF8F3; 
+  background-size: 101px 764px, 680px 450px;
   background-repeat: no-repeat;
   background-position: 25px 38px, bottom right;
 }
+
 header nav{
-  width: 71%;
   margin: 0 auto;
   padding: 50px 0;
   display: flex;
@@ -95,7 +92,6 @@ header nav ul li button a{
 }
 
 header section.content{
-  margin: 0 82px 11px 186px;
   display: flex;
   align-items: center;
 }
@@ -172,14 +168,184 @@ section.content div.img-area img{
   vertical-align: middle;
 }
 
+@media screen and (max-width: 480px) {
+  header nav h2{
+    font-size: 35px;
+  }
+
+  header nav{
+    justify-self: center;
+    flex-direction: column;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  header ul{
+    align-content: center;
+    gap: 20px;
+  }
+
+  header nav ul li a{
+    font-size: 16px;
+  }
+
+  header nav ul li button{
+    width: 70px;
+    height: 30px;
+  }
+
+  header nav ul li button a{
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  header section.content h2{
+    margin-bottom: 0;
+    font-size: 30px;
+  }
+
+  header section.content h1{
+    font-size: 40px;
+    margin-bottom: 0;
+  }
+
+  header section.content{
+    margin: 0 61.6771px;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  header section.content p{
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+
+  section.content div.img-area img{
+    width: 100%;
+    height: 100%;
+  }
+
+  header section.content p{
+    padding: 0;
+  }
+
+  header section.content .dwn-btn{
+    margin: 0 0 15px 0;
+    padding: 8px 12px;
+  }
+
+  header section.content .dwn-btn a{
+    font-size: 16px;
+  }
+
+  header section.content .cntc-btn{
+    padding: 8px 12px;
+  }
+
+  header section.content .cntc-btn a{
+    font-size: 16px;
+  }
+
+  header {
+    background: url(../images/developer.png), url(../images/header_bg.png), #FFF8F3;
+    background-size: 101px 764px, 425px 250px;
+    background-repeat: no-repeat;
+    background-position: 25px 38px, bottom center;
+}
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  header nav h2{
+    font-size: 35px;
+  }
+
+  header nav{
+    justify-self: center;
+    flex-direction: column;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  header ul{
+    align-content: center;
+    gap: 20px;
+  }
+
+  header nav ul li a{
+    font-size: 16px;
+  }
+
+  header nav ul li button{
+    width: 70px;
+    height: 30px;
+  }
+
+  header nav ul li button a{
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  header section.content h2{
+    margin-bottom: 0;
+    font-size: 30px;
+  }
+
+  header section.content h1{
+    font-size: 40px;
+    margin-bottom: 0;
+  }
+
+  header section.content{
+    margin: 0 61.6771px;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  header section.content p{
+    font-size: 14px;
+  }
+
+  section.content div.img-area img{
+    width: 70%;
+    height: 70%;
+  }
+
+  header section.content p{
+    padding: 0;
+  }
+
+  header section.content .dwn-btn{
+    margin: 0 0 10px 0;
+    padding: 13px 15px;
+  }
+
+  header section.content .dwn-btn a{
+    font-size: 18px;
+  }
+
+  header section.content .cntc-btn{
+    padding: 13px 15px;
+  }
+
+  header section.content .cntc-btn a{
+    font-size: 18px;
+  }
+
+  header {
+    background: url(../images/developer.png), url(../images/header_bg.png), #FFF8F3;
+    background-repeat: no-repeat;
+    background-position: 25px 38px, bottom right;
+}
+}
 /* about section */
 section.about{
   padding-top: 130px;
 }
 
 div.about-container{
-  padding: 115px 145px 147px 168px;
-  width: 71%;
+  padding: 100px 120px;
   max-width: 1600px;
   margin: 0 auto;
   background-color: #FFF8F3;
@@ -215,12 +381,81 @@ div.about-container{
   font-size: 20px;
   font-weight: 700;
 }
+
 .about-container .card-area div h3{
   color: #474747;
   font-size: 20px;
   font-weight: 700;
 }
 
+@media screen and (max-width: 480px) {
+  section.about{
+    padding-top: 100px;
+  }
+
+  div.about-container{
+    padding: 40px 40px 40px 40px;
+  }
+
+  .about-container .text-area h2{
+    padding-bottom: 20px;
+  }
+
+  .about-container .text-area p{
+    padding: 0 0 50px 0;
+  }
+
+  .about-container .card-area{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-container .card-area div p{
+    padding: 0;
+  }
+
+  .about-container .card-area div h3{
+    margin: 5px 0 20px 0;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  section.about{
+    padding-top: 100px;
+  }
+
+  div.about-container{
+    padding: 40px 40px 40px 40px;
+  }
+
+  .about-container .text-area h2{
+    padding-bottom: 20px;
+  }
+
+  .about-container .text-area p{
+    padding: 0 0 50px 0;
+  }
+
+  .about-container .card-area{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-container .card-area div p{
+    padding: 0;
+  }
+
+  .about-container .card-area div h3{
+    margin: 5px 0 20px 0;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .about-container .card-area{
+    flex-direction: column;
+    align-items: center;
+  }
+}
 /* skill area */
 section.skill{
   margin-top: 115px;
@@ -246,7 +481,7 @@ section.skill .text-area p{
 
 section.skill .card-area{
   display: flex;
-  gap: 24px;
+  gap: 10px;
 }
 
 section.skill .card-area div{
@@ -281,6 +516,89 @@ section.skill .card-area div p{
   text-align: left;
 }
 
+@media screen and (max-width: 480px) {
+  section.skill{
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+  section.skill .card-area{
+  flex-direction: column;
+  gap: 30px;
+}
+
+section.skill .card-area div{
+  border-radius: 7px ;
+  box-shadow: 0 3px 15px gray;
+}
+
+
+section.skill .card-area div figure img{
+  padding-bottom: 10px;
+}
+
+section.skill .card-area div h3{
+  padding-bottom: 10px;
+}
+
+section.skill .card-area div p{
+  text-align: justify;
+}
+
+ section.skill .text-area p{
+  margin: 0;
+  padding: 0 0 50px 0;
+  text-align: justify;
+ }
+
+ section.skill .text-area h2{
+  margin-bottom: 20px;
+}
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  section.skill .card-area{
+  flex-wrap: wrap;
+}
+
+section.skill .card-area div figure img{
+  padding-bottom: 10px;
+}
+
+section.skill .card-area div h3{
+  padding-bottom: 10px;
+}
+
+section.skill .card-area div p{
+  text-align: justify;
+}
+
+ section.skill .text-area p{
+  margin: 0;
+  padding: 0 50px 50px 50px;
+  text-align: justify;
+ }
+
+ section.skill .text-area h2{
+  margin-bottom: 20px;
+}
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  section.skill .card-area{
+  flex-wrap: wrap;
+}
+
+section.skill .card-area div h3{
+  padding-bottom: 10px;
+}
+
+ section.skill .text-area p{
+  margin: 0;
+  padding: 0 50px 50px 50px;
+ }
+}
+
 /* resume section */
 section.resume .h2-align h2{
   text-align: center;
@@ -292,8 +610,8 @@ section.resume .h2-align h2{
 
 section.resume .content .parent{
   display: flex;
-  gap: 20px;
   justify-content: space-between;
+  gap: 15px;
 }
 
 section.resume .education h3{
@@ -380,6 +698,103 @@ section.resume .dwn-btn:hover{
   background-color: green;
 }
 
+@media screen and (max-width: 480px) {
+  section.resume .h2-align h2{
+  margin-bottom: 50px;
+}
+
+section.resume .content .parent{
+  flex-direction: column;
+  gap: 50px;
+}
+
+section.resume .education h3{
+  margin-bottom: 20px;
+}
+
+section.resume .education article p{
+  padding-bottom: 20px;
+  text-align: justify;
+}
+
+section.resume .education article hr{
+  margin-bottom: 15px;
+}
+
+section.resume .experience h3{
+  margin-bottom: 20px;
+}
+
+section.resume .experience #article-1 p{
+  padding-bottom: 20px;
+  text-align: justify;
+}
+
+section.resume .experience article hr{
+  margin-bottom: 15px;
+}
+
+.dwn-btn{
+  padding: 13px 15px;
+}
+
+section.resume .dwn-btn a{
+  font-size: 18px;
+}
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  section.resume .h2-align h2{
+  margin-bottom: 50px;
+}
+
+section.resume .content .parent{
+  flex-direction: column;
+  gap: 50px;
+}
+
+section.resume .education h3{
+  margin-bottom: 20px;
+}
+
+section.resume .education article p{
+  padding-bottom: 20px;
+  text-align: justify;
+}
+
+section.resume .education article hr{
+  margin-bottom: 15px;
+}
+
+section.resume .experience h3{
+  margin-bottom: 20px;
+}
+
+section.resume .experience #article-1 p{
+  padding-bottom: 20px;
+  text-align: justify;
+}
+
+section.resume .experience article hr{
+  margin-bottom: 15px;
+}
+
+.dwn-btn{
+  padding: 13px 15px;
+}
+
+section.resume .dwn-btn a{
+  font-size: 18px;
+}
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+section.resume .content .parent{
+  flex-direction: column;
+  gap: 50px;
+}
+}
+
 /* footer area */
 section.footer{
   margin-top: 113px;
@@ -464,4 +879,118 @@ section.footer .footer-content{
 .footer-content .div-2 form .sb-btn:hover{
   background-color: green;
   cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+  section.footer{
+    margin-top: 100px;
+  }
+
+  section.footer .footer-content{
+    padding: 80px 0 60px 0;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .footer-content .div-1 p{
+    padding: 10px 0 20px 0;
+    text-align: justify;
+  }
+
+  .footer-content .div-2 h2{
+    line-height: normal;
+  }
+
+  .footer-content .div-2 form input{
+    width: 100%;
+  }
+
+  .footer-content .div-2 form textarea{
+    width: 100%;
+  }
+
+  .footer-content .div-2 form textarea::placeholder{
+    padding: 20px 0 0px 25px;
+  }
+
+  .footer-content .div-2 form .sb-btn{
+    width: 100px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 600;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  section.footer{
+    margin-top: 100px;
+  }
+
+  section.footer .footer-content{
+    padding: 80px 0 60px 0;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .footer-content .div-1 p{
+    padding: 10px 0 20px 0;
+    text-align: justify;
+  }
+
+  .footer-content .div-2 h2{
+    line-height: normal;
+  }
+
+  .footer-content .div-2 form input{
+    width: 100%;
+  }
+
+  .footer-content .div-2 form textarea{
+    width: 100%;
+  }
+
+  .footer-content .div-2 form textarea::placeholder{
+    padding: 20px 0 0px 25px;
+  }
+
+  .footer-content .div-2 form .sb-btn{
+    width: 100px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 600;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  section.footer .footer-content{
+    padding: 80px 0 60px 0;
+  }
+
+  .footer-content .div-1 p{
+    padding: 10px 120px 20px 0;
+    text-align: justify;
+  }
+
+  .footer-content .div-2 h2{
+    line-height: normal;
+  }
+
+  .footer-content .div-2 form input{
+    width: 100%;
+  }
+
+  .footer-content .div-2 form textarea{
+    width: 100%;
+  }
+
+  .footer-content .div-2 form textarea::placeholder{
+    padding: 20px 0 0px 25px;
+  }
+
+  .footer-content .div-2 form .sb-btn{
+    width: 100px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 600;
+  }
 }
